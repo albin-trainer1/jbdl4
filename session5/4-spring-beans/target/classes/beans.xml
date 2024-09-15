@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- 
+	Instructions to the spring container
+	-->
+	<bean id="g1" class="com.geek.bean.GreetingBeanImpl" lazy-init="true">
+		
+		<!--<property name="msg" value="Have a nice Day!!!!">
+			
+		</property>-->
+		<constructor-arg   value="Welcome to Spring course!!!!">
+			
+		</constructor-arg>
+	</bean>
+
+</beans>
